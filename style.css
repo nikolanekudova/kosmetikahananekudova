@@ -11,10 +11,6 @@ header {
     flex-direction: column;
     justify-content: space-between;
     font-weight: 500;
-    background-image: url("./images/background-img.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
 }
 
 nav {
@@ -47,7 +43,7 @@ footer {
 h1 {
     margin: 0;
     font-family: "Urbanist";
-    font-size: 30px;
+    font-size: 28px;
 }
 
 h2 {
@@ -60,15 +56,14 @@ a {
 }
 
 li a {
-    color: white;
-    background-color: rgb(240, 152, 132);
-    padding: 8px 16px;
+    color: black;
+    padding: 6px 10px;
     font-size: smaller;
     border-radius: 10px;
 }
 
 li a:hover {
-    background-color: rgb(237, 133, 110)
+    background-color: rgb(224, 224, 224);
 }
 
 main section {
@@ -116,12 +111,25 @@ td {
     padding-bottom: 20px;
 }
 
+#introduction-background {
+    background-image: url("./images/background-img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+#introduction-overlay {
+    background-color: rgba(255, 255, 255, 0.7)
+}
+
 #introduction {
     display: flex;
     padding: 20px;
     gap: 20px;
     align-items: center;
     justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
 }
 
 #photo-women {
@@ -133,7 +141,7 @@ td {
 }
 
 #header-overlay {
-    background-color: rgba(255, 255, 255, 0.7)
+    background-color: rgb(200, 200, 200);
 }
 
 #footer-wrapper {
@@ -215,26 +223,30 @@ td {
 #toggle-button .bar {
     height: 3px;
     width: 100%;
-    background-color: rgb(240, 152, 132);
+    background-color: black;
     border-radius: 10px;
 }
 
 @media only screen and (max-width: 768px) {
-    header {
-        background-image: none;
-        background-color: rgb(236, 238, 236);
-    }
-
-    #header-overlay {
-        background-color: transparent;
-    }
-
     table {
         width: 100%;
     }
 
     td {
         padding: 10px;
+    }
+
+    ul {
+        margin: 0;
+        gap: 10px;
+    }
+
+    li a {
+        padding: 0;
+    }
+
+    li:hover {
+        background-color: white;
     }
 
     #introduction {
@@ -287,7 +299,6 @@ td {
         display: none;
         width: 100%;
         align-items: center;
-        background-color: rgb(240, 152, 132);
     }
 
     #navbar {
@@ -305,9 +316,12 @@ td {
         text-align: center;
     }
 
+    #navbar-links li:hover {
+        background-color: white;
+    }
+
     #navbar-links.active {
         display: flex;
     }
-
   }
 
