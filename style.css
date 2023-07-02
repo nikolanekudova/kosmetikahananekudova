@@ -19,7 +19,19 @@ header {
 
 nav {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     gap: 20px;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
 }
 
 main {
@@ -35,6 +47,7 @@ footer {
 h1 {
     margin: 0;
     font-family: "Urbanist";
+    font-size: 30px;
 }
 
 h2 {
@@ -46,7 +59,7 @@ a {
     text-decoration: none;
 }
 
-header a {
+li a {
     color: white;
     background-color: rgb(240, 152, 132);
     padding: 8px 16px;
@@ -54,7 +67,7 @@ header a {
     border-radius: 10px;
 }
 
-header a:hover {
+li a:hover {
     background-color: rgb(237, 133, 110)
 }
 
@@ -96,9 +109,6 @@ td {
 }
 
 #h1-nav-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 0px 20px;
 }
 
@@ -191,6 +201,24 @@ td {
     gap: 20px;
 }
 
+#toggle-button {
+    position: absolute;
+    top: 1.8rem;
+    right: 2rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+}
+
+#toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: rgb(240, 152, 132);
+    border-radius: 10px;
+}
+
 @media only screen and (max-width: 768px) {
     header {
         background-image: none;
@@ -250,5 +278,36 @@ td {
     #motto-small {
         font-size: 16px;
     }
+
+    #toggle-button {
+        display: flex;
+    }
+
+    #navbar-links {
+        display: none;
+        width: 100%;
+        align-items: center;
+        background-color: rgb(240, 152, 132);
+    }
+
+    #navbar {
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+
+    #navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #navbar-links li {
+        text-align: center;
+    }
+
+    #navbar-links.active {
+        display: flex;
+    }
+
   }
 
