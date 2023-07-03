@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@600;700&display=swap');
+
 /* GENERAL STYLES */
 
 html {
@@ -33,7 +35,7 @@ li {
 }
 
 main {
-    max-width: 1000px;
+    max-width: 1050px;
     margin: auto;
 }
 
@@ -42,19 +44,25 @@ footer {
     margin-top: 20px;
 }
 
+p {
+    padding-bottom: 8px;
+}
+
 h1 {
     margin: 0;
     font-family: "Urbanist";
     font-size: 28px;
+    font-weight: 700;
 }
 
 h2 {
     margin: 0;
     text-align: center;
+    padding: 10px;
 }
 
 main section {
-    padding: 20px 0px;
+    padding: 20px;
 }
 
 /* LINKS */
@@ -141,7 +149,7 @@ td {
 #introduction-text-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
 }
 
 #introduction-background {
@@ -192,7 +200,7 @@ td {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 20px;
+    padding: 20px 0px;
 }
 
 #footer-overlay {
