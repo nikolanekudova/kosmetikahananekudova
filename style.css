@@ -1,3 +1,5 @@
+/* GENERAL STYLES */
+
 html {
     scroll-behavior: smooth;
 }
@@ -51,6 +53,12 @@ h2 {
     text-align: center;
 }
 
+main section {
+    padding: 20px 0px;
+}
+
+/* LINKS */
+
 a {
     text-decoration: none;
 }
@@ -66,10 +74,6 @@ li a:hover {
     background-color: rgb(228, 227, 227);
 }
 
-main section {
-    padding: 20px 0px;
-}
-
 footer a {
     color: black;
 }
@@ -77,6 +81,8 @@ footer a {
 footer a:hover {
     color: rgb(240, 152, 132);
 }
+
+/* TABLE */
 
 table {
     margin-left: auto;
@@ -92,10 +98,15 @@ td {
     padding: 20px;
 }
 
+/* PAGE */
+
 #page-wrapper {
-    color: rgb(1, 25, 54); 
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(1, 25, 54);
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
 }
+
+/* HEADER */
 
 #header-wrapper {
     max-width: 1000px;
@@ -103,8 +114,34 @@ td {
     padding: 20px 20px 0px 20px;
 }
 
-#heading-prices {
-    padding-bottom: 20px;
+#header-overlay {
+    background-color: rgb(242, 242, 242);
+}
+
+#hamburger-menu-button {
+    position: absolute;
+    top: 1.8rem;
+    right: 2rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+}
+
+#hamburger-menu-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+/* INTRODUCTION */
+
+#introduction-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 #introduction-background {
@@ -115,10 +152,10 @@ td {
 }
 
 #introduction-overlay {
-    background-color: rgba(255, 255, 255, 0.7)
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
-#introduction {
+#introduction-wrapper {
     display: flex;
     padding: 20px;
     gap: 20px;
@@ -136,9 +173,20 @@ td {
     outline-offset: -10px;
 }
 
-#header-overlay {
-    background-color: rgb(242, 242, 242);
+#motto {
+    font-size: 52px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: rgb(240, 152, 132);
+    margin: 0;
 }
+
+#motto-small {
+    font-size: 20px;
+    margin: 0;
+}
+
+/* FOOTER */
 
 #footer-wrapper {
     display: flex;
@@ -152,7 +200,6 @@ td {
     margin: auto;
     padding: 20px;
 }
-
 
 #copyright {
     display: flex;
@@ -168,12 +215,7 @@ td {
     border: 0;
 }
 
-#img-hana {
-    max-width: 200px;
-    border-radius: 50%;
-    outline: 1px solid rgb(237, 235, 233);
-    outline-offset: -10px;
-}
+/* SECTION: ABOUT */
 
 #about-wrapper {
     display: flex;
@@ -186,44 +228,21 @@ td {
     justify-content: right;
 }
 
-#motto {
-    font-size: 52px;
-    font-weight: 800;
-    text-transform: uppercase;
-    color: rgb(240, 152, 132);
-    margin: 0;
+#img-hana {
+    max-width: 200px;
+    border-radius: 50%;
+    outline: 1px solid rgb(237, 235, 233);
+    outline-offset: -10px;
 }
 
-#motto-small {
-    font-size: 20px;
-    margin: 0;
-}
+/* SECTION: PRICES */
 
-#introduction-text-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-#toggle-button {
-    position: absolute;
-    top: 1.8rem;
-    right: 2rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 25px;
-}
-
-#toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: black;
-    border-radius: 10px;
+#heading-prices {
+    padding-bottom: 20px;
 }
 
 @media only screen and (max-width: 768px) {
+    /* GENERAL STYLES */
     table {
         width: 100%;
     }
@@ -237,10 +256,6 @@ td {
         gap: 10px;
     }
 
-    li a {
-        padding: 0;
-    }
-
     h1 {
         max-width: 75vw;
     }
@@ -249,49 +264,15 @@ td {
         padding: 20px;
     }
 
-    #introduction {
-        display: flex;
-        flex-direction: column;
-        gap: 0;
+    /* LINKS */
+
+    li a {
+        padding: 0;
     }
 
-    #photo-women {
-        max-width: 100%;
-    }
+    /* HEADER */
 
-    #footer-wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    #google-map {
-        width: 100%;
-        height: 200px;
-        border: 0;
-    }
-
-    #about-wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 0px;
-        align-items: center;
-    }
-
-    #introduction {
-        display: flex;
-        gap: 20px;
-    }
-
-    #motto {
-        font-size: 24px;
-    }
-
-    #motto-small {
-        font-size: 16px;
-    }
-
-    #toggle-button {
+    #hamburger-menu-button {
         display: flex;
     }
 
@@ -319,5 +300,47 @@ td {
     #navbar-links.active {
         display: flex;
     }
-  }
 
+    /* INTRODUCTION */
+
+    #photo-women {
+        max-width: 100%;
+    }
+
+    #introduction-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #motto {
+        font-size: 24px;
+    }
+
+    #motto-small {
+        font-size: 16px;
+    }
+
+    /* FOOTER */
+
+    #footer-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #google-map {
+        width: 100%;
+        height: 200px;
+        border: 0;
+    }
+
+    /* SECTION: ABOUT */
+
+    #about-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        align-items: center;
+    }
+}

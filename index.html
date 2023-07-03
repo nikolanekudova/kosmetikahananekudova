@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Kosmetika Hana Nekudová</title>
-    <script src="https://kit.fontawesome.com/6721939faf.js" crossorigin="anonymous"></script>
-    <script src="./script.js" defer></script> 
-</head>
-<body>
-    <div id="page-wrapper">
-        <header>
-            <div id="header-overlay">
-                <div id="header-wrapper">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>Kosmetika Hana Nekudová</title>
+        <script
+            src="https://kit.fontawesome.com/6721939faf.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="./script.js" defer></script>
+    </head>
+    <body>
+        <div id="page-wrapper">
+            <header>
+                <div id="header-overlay">
+                    <div id="header-wrapper">
                         <nav id="navbar">
                             <h1>Kosmetika Hana Nekudová</h1>
-                            <a href="#" id="toggle-button">
+                            <a href="#" id="hamburger-menu-button">
                                 <span class="bar"></span>
                                 <span class="bar"></span>
                                 <span class="bar"></span>
@@ -30,155 +33,176 @@
                                 </ul>
                             </div>
                         </nav>
-                </div>
-            </div>
-        </header>
-        <div id="introduction-background">
-            <div id="introduction-overlay">
-                <div id="introduction">
-                    <div id="introduction-text-wrapper">
-                        <p id="motto">Cestou k&nbsp;vaší přirozené kráse</p>
-                        <p id="motto-small">Dopřejte své pleti prvotřídní péči v&nbsp;mém studiu.</p>
                     </div>
-                    <img 
-                        srcset="./images/women_480w.jpg 480w, 
-                                ./images/women_1000w.jpg 1000w"
-                        sizes="(max-width: 768px) 480px,
+                </div>
+            </header>
+            <div id="introduction-background">
+                <div id="introduction-overlay">
+                    <div id="introduction-wrapper">
+                        <div id="introduction-text-wrapper">
+                            <p id="motto">Cestou k&nbsp;vaší přirozené kráse</p>
+                            <p id="motto-small">
+                                Dopřejte své pleti prvotřídní péči v&nbsp;mém
+                                studiu.
+                            </p>
+                        </div>
+                        <img
+                            srcset="
+                                ./images/women_480w.jpg   480w,
+                                ./images/women_1000w.jpg 1000w
+                            "
+                            sizes="(max-width: 768px) 480px,
                            1000px"
-                        src="./images/women_1000w.jpg"
-                        alt="Ležící žena s pleťovou maskou na obličeji" 
-                        id="photo-women"> 
-               </div>
+                            src="./images/women_1000w.jpg"
+                            alt="Ležící žena s pleťovou maskou na obličeji"
+                            id="photo-women"
+                        />
+                    </div>
+                </div>
             </div>
+
+            <main>
+                <section id="about">
+                    <h2>O mně</h2>
+                    <div id="about-wrapper">
+                        <div id="about-text-wrapper">
+                            <p>
+                                Jsem profesionální kosmetička, která se
+                                kosmetice věnuje již přes 20 let. Ráda svým
+                                klientkám a&nbsp;klientům dělám radost krásnou
+                                a&nbsp;vyživenou pletí a&nbsp;pomáhám
+                                s&nbsp;případnými problémy týkajících jejich
+                                pleti.
+                            </p>
+                            <p>
+                                Kosmetické ošetření vždy přizpůsobím aktuálním
+                                potřebám Vaší pleti, které se mohou
+                                v&nbsp;průběhu roku měnit.
+                            </p>
+                            <p>
+                                Pracuji s profesionální německou kosmetikou
+                                Janssen Cosmetics vysoké kvality. Nabízím
+                                širokou škálu kosmetických ošetření a procedur,
+                                které Vaši pleti poskytnou maximální péči.
+                                Sazmozřejmostí je i&nbsp;zakoupení produktů pro
+                                domácí péči.
+                            </p>
+                            <h3 id="about-name">Hana Nekudová</h3>
+                        </div>
+                        <div id="about-img-wrapper">
+                            <img
+                                src="./images/hana.png"
+                                alt="Fotografie kosmetičky Hany Nekudové"
+                                id="img-hana"
+                            />
+                        </div>
+                    </div>
+                </section>
+                <section id="cosmetics">
+                    <h2>Kosmetika</h2>
+                    <p>
+                        Ve mém kosmetickém studiu nabízím širokou škálu služeb.
+                        Od čištění pleti, ošetření akné, omlazujících procedur,
+                        mikrodermabraze po chemických peeling a mnoha dalších.
+                    </p>
+                    <p>
+                        Nabízím také specializované ošetření pro různé typy
+                        pleti, jako je suchá, mastná, citlivá nebo zralá pleť.
+                        Každá klientka či klient je pro mě jedinečná, a proto
+                        přistupuji k péči o pleť s maximální profesionalitou a
+                        péčí.
+                    </p>
+                    <p>
+                        Kromě péče o pleť nabízím také další kosmetické služby,
+                        jako je úprava obočí, depilace a tvarování obočí,
+                        konzultace a mnoho dalšího.
+                    </p>
+                    <p>
+                        Všechny služby jsou prováděny s použitím kvalitních
+                        kosmetických produktů od značky Janssen Cosmetics, abych
+                        Vám zaručili nejen krásný výsledek, ale také bezpečnost
+                        a péči o vaši pokožku.
+                    </p>
+                </section>
+                <section id="prices">
+                    <h2 id="heading-prices">Ceník</h2>
+                    <table>
+                        <tr>
+                            <td>základní kosmetické ošetření</td>
+                            <td>650 Kč</td>
+                        </tr>
+                        <tr>
+                            <td>aplikace kolagenové masky</td>
+                            <td>300 Kč</td>
+                        </tr>
+                        <tr>
+                            <td>aplikace práškové slupovací masky</td>
+                            <td>200 Kč</td>
+                        </tr>
+                        <tr>
+                            <td>aplikace hydrogelové masky</td>
+                            <td>300 Kč</td>
+                        </tr>
+                        <tr>
+                            <td>aplikace ampulkového koncentrátu</td>
+                            <td>50 Kč</td>
+                        </tr>
+                        <tr>
+                            <td>barvení řas</td>
+                            <td>80 Kč</td>
+                        </tr>
+                        <tr>
+                            <td>barvení obočí</td>
+                            <td>70 Kč</td>
+                        </tr>
+                        <tr>
+                            <td>depilace horního rtu</td>
+                            <td>80 Kč</td>
+                        </tr>
+                        <tr>
+                            <td>chemický peeling</td>
+                            <td>400 Kč</td>
+                        </tr>
+                    </table>
+                </section>
+            </main>
+
+            <footer id="contact">
+                <div id="footer-overlay">
+                    <h2>Kontaktní údaje</h2>
+                    <div id="footer-wrapper">
+                        <div id="footer-left-side-wrapper">
+                            <div id="footer-contact">
+                                <p>Adresa: Jánská 448/10, 602 00 Brno</p>
+                                <p>Telefon: +420 111 222 333</p>
+                                <p>
+                                    E-mail:
+                                    <a
+                                        href="mailto:hana@kosmetikahananekudova.cz"
+                                        >hana@kosmetikahananekudova.cz</a
+                                    >
+                                </p>
+                            </div>
+                            <div id="footer-icons">
+                                <a
+                                    href="https://www.facebook.com/kosmetikahananekudova"
+                                    ><i class="fa-brands fa-facebook fa-xl"></i
+                                ></a>
+                            </div>
+                        </div>
+                        <div id="footer-map-wrapper">
+                            <iframe
+                                id="google-map"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.3422293530575!2d16.607760676120492!3d49.19406707137971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471294573d725837%3A0x402679cd132aecc0!2zSsOhbnNrw6EgNDQ4LzEwLCA2MDIgMDAgQnJuby1zdMWZZWQtQnJuby1txJtzdG8!5e0!3m2!1scs!2scz!4v1686470629613!5m2!1scs!2scz"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div id="copyright">&copy; Nikola Nekudová 2023</div>
+            </footer>
         </div>
-
-        <main>
-            <section id="about">
-                <h2>O mně</h2>
-                <div id="about-wrapper">
-                    <div id="about-text-wrapper">
-                        <p>
-                            Jsem profesionální kosmetička, která se kosmetice věnuje již přes 20 let. Ráda svým klientkám a&nbsp;klientům 
-                            dělám radost krásnou a&nbsp;vyživenou pletí a&nbsp;pomáhám s&nbsp;případnými problémy týkajících jejich pleti.
-                        </p>
-                        <p>
-                            Kosmetické ošetření vždy přizpůsobím aktuálním potřebám Vaší pleti, které se mohou v&nbsp;průběhu roku měnit.
-                        </p>
-                        <p>
-                            Pracuji s profesionální německou kosmetikou Janssen Cosmetics vysoké kvality. Nabízím širokou škálu 
-                            kosmetických ošetření a procedur, které Vaši pleti poskytnou maximální péči. Sazmozřejmostí je i&nbsp;zakoupení
-                            produktů pro domácí péči.
-                        </p>
-                        <h3 id="about-name">Hana Nekudová</h3>
-                    </div>
-                    <div id="about-img-wrapper">
-                        <img src="./images/hana.png" alt="Fotografie kosmetičky Hany Nekudové" id="img-hana">
-                    </div>
-                </div>
-
-
-
-            </section>
-            <section id="cosmetics">
-                <h2>Kosmetika</h2>
-
-                <p>
-                    Ve mém kosmetickém studiu nabízím širokou škálu služeb. Od čištění pleti, ošetření akné, omlazujících procedur, mikrodermabraze 
-                    po chemických peeling a mnoha dalších.
-                </p>
-                <p>
-                    Nabízím také specializované ošetření pro různé typy pleti, jako je suchá, mastná, citlivá 
-                    nebo zralá pleť. Každá klientka či klient je pro mě jedinečná, a proto přistupuji k péči o pleť s maximální profesionalitou a péčí.
-                </p>
-                <p>
-                    Kromě péče o pleť nabízím také další kosmetické služby, jako je úprava obočí, depilace a tvarování obočí, konzultace a mnoho dalšího. 
-                </p>
-                <p>
-                    Všechny služby jsou prováděny s použitím kvalitních kosmetických produktů od značky Janssen Cosmetics, abych Vám zaručili nejen krásný výsledek, 
-                    ale také bezpečnost a péči o vaši pokožku.
-                </p>
-            </section>
-            <section id="prices">
-                <h2 id="heading-prices">Ceník</h2>
-                <!-- <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. In dapibus augue non sapien. Duis risus. 
-                    Maecenas aliquet accumsan leo. Morbi imperdiet, mauris ac auctor dictum, nisl ligula egestas nulla, 
-                    et sollicitudin sem purus in lacus. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis 
-                    quis, sem. Integer imperdiet lectus quis justo. Aliquam ornare wisi eu metus. Quisque porta.
-                </p> -->
-                <table>
-                    <tr>
-                        <td>základní kosmetické ošetření</td>
-                        <td>650 Kč</td>
-                    </tr>
-                    <tr>
-                        <td>aplikace kolagenové masky</td>
-                        <td>300 Kč</td>
-                    </tr>
-                    <tr>
-                        <td>aplikace práškové slupovací masky</td>
-                        <td>200 Kč</td>
-                    </tr>
-                    <tr>
-                        <td>aplikace hydrogelové masky</td>
-                        <td>300 Kč</td>
-                    </tr>
-                    <tr>
-                        <td>aplikace ampulkového koncentrátu</td>
-                        <td>50 Kč</td>
-                    </tr>
-                    <tr>
-                        <td>barvení řas</td>
-                        <td>80 Kč</td>
-                    </tr>
-                    <tr>
-                        <td>barvení obočí</td>
-                        <td>70 Kč</td>
-                    </tr>
-                    <tr>
-                        <td>depilace horního rtu</td>
-                        <td>80 Kč</td>
-                    </tr>
-                    <tr>
-                        <td>chemický peeling </td>
-                        <td>400 Kč</td>
-                    </tr>
-                </table>
-            </section>
-        </main>
-    
-        <footer id="contact">
-            <div id="footer-overlay">
-                <h2>Kontaktní údaje</h2>
-                <div id="footer-wrapper">
-                    <div id="footer-left-side-wrapper">
-                        <div id="footer-contact">
-                            <p>Adresa: Jánská 448/10, 602 00 Brno</p>
-                            <p>Telefon: +420 111 222 333</p>
-                            <p>E-mail: <a href="mailto:hana@kosmetikahananekudova.cz">hana@kosmetikahananekudova.cz</a></p>
-                        </div>
-                        <div id="footer-icons">
-                            <a href="https://www.facebook.com/kosmetikahananekudova"><i class="fa-brands fa-facebook fa-xl"></i></a>
-                        </div>
-                        <!-- <div id="contact-form">
-                            <p>Přihlásit k odběru novinek</p>
-                            <label>Jméno a příjmení</label>
-                            <input type="text">
-                            <label>Telefonní číslo</label>
-                            <input type="tel">
-                            <button>Odeslat</button>
-                        </div> -->
-                    </div>
-                    <div id="footer-map-wrapper">
-                        <iframe id="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.3422293530575!2d16.607760676120492!3d49.19406707137971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471294573d725837%3A0x402679cd132aecc0!2zSsOhbnNrw6EgNDQ4LzEwLCA2MDIgMDAgQnJuby1zdMWZZWQtQnJuby1txJtzdG8!5e0!3m2!1scs!2scz!4v1686470629613!5m2!1scs!2scz" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-            </div>
-            <div id="copyright">
-                &copy; Nikola Nekudová 2023
-            </div>
-        </footer>
-    </div>
-    
-</body>
+    </body>
 </html>
